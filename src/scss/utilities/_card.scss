@@ -39,12 +39,15 @@
 
     transform: translateY(100%);
     transform-origin: center;
-    z-index: 100;
 
     transition: 0.3s ease-in-out;
 
     display: grid;
     place-items: center;
+
+    > * {
+      z-index: 100;
+    }
   }
 
   &:hover {
