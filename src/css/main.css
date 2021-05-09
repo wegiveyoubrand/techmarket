@@ -173,7 +173,7 @@ input {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 1rem 2rem;
+  padding: 1rem 20px;
   background: #fff;
   -webkit-box-shadow: 0px 5px 5px #eee;
           box-shadow: 0px 5px 5px #eee;
@@ -181,10 +181,9 @@ input {
   z-index: 99;
 }
 
-@media (max-width: 720px) {
+@media (min-width: 720px) {
   .header {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 2rem;
   }
 }
 
@@ -217,7 +216,13 @@ input {
 }
 
 .main {
-  padding: 2rem;
+  padding: 20px;
+}
+
+@media (min-width: 620px) {
+  .main {
+    padding: 2rem;
+  }
 }
 
 .container-overlay {
@@ -279,18 +284,19 @@ input {
 }
 
 .products {
+  max-width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 100%;
+  grid-template: 20px;
 }
 
 @media (min-width: 620px) {
   .products {
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
   }
 }
 
