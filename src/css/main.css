@@ -325,15 +325,17 @@ input {
 .product-card .over-lay {
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transform-origin: center;
           transform-origin: center;
-  z-index: 2;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  z-index: 100;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   display: -ms-grid;
   display: grid;
   place-items: center;
