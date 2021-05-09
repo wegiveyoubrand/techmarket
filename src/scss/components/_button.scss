@@ -3,16 +3,22 @@
   border-radius: 25px;
 }
 
-// button {
-//   outline: none;
-//   border: none;
+button {
+  outline: none;
+  border: none;
 
-//   padding: 10px 20px;
+  padding: 10px 20px;
 
-//   // background: transparent;
+  background: blue;
+  border-radius: 5px;
 
-//   font-size: 1rem;
-// }
+  font-size: 1rem;
+  transition: 0.3s ease;
+  :hover {
+    background: transparent;
+    outline: 2px solid blue;
+  }
+}
 
 .close-modal {
   font-size: 2.9rem;
