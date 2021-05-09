@@ -331,6 +331,10 @@ input {
   overflow: hidden;
 }
 
+.product-card g {
+  height: 100%;
+}
+
 .product-card .over-lay {
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
