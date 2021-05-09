@@ -1,0 +1,1 @@
+This are files on which the Components and Layouts anre dependants.

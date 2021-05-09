@@ -1,0 +1,1 @@
+This are files components that are used and can be used multiple times within a page layouts
