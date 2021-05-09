@@ -24,21 +24,24 @@ selection.forEach((productTab) => {
 });
 
 if (userSelection == "iphones") {
-  productsContainer.forEach(productsContainer => {productsContainer.innerHTML = `${iphones
-    .map((iphone) => {
-      return `
+  productsContainer.forEach((productsContainer) => {
+    productsContainer.innerHTML = `${iphones
+      .map((iphone) => {
+        return `
         <div class="product-card">
-            <div class="product-image">
-                <img src="${iphones_image_root}/${iphone.image}" alt="">
+          <div class="over-lay">
+          <button>View details</button></div>
+          <div class="product-image">
+            <img src="${iphones_image_root}/${iphone.image}" alt="">
 
-            </div>
-            <div class="product-name">
-                ${iphone.name}
-            </div>
+          </div>
+          <div class="product-name">
+              ${iphone.name}
+          </div>
         </div>
     `;
-    })
-    .join("")}`; 
+      })
+      .join("")}`;
   });
 } else if (userSelection == "samsung") {
   productsContainer.innerHTML = `${samsungs

@@ -19,7 +19,8 @@ const userSelection = "iphones" || selection.textContent;
 
 const selection = document.querySelectorAll(".product-tab");
 
-selection.forEach((productTab) => { return productTab.addEventListener('click', e => (e.target.innerText));
+selection.forEach((productTab) => {
+  return productTab.addEventListener("click", (e) => e.target.innerText);
 });
 
 if (userSelection == "iphones") {
@@ -27,6 +28,7 @@ if (userSelection == "iphones") {
     .map((iphone) => {
       return `
         <div class = "product">
+          <div class = "overlay"></div>
             <div class="product__image">
                 <img src='${iphones_image_root}/${iphone.image}'>
             </div>
@@ -107,7 +109,6 @@ if (userSelection == "iphones") {
 </form>
 </div>`;
 }
-
 
 const menu = document.querySelector(".menu-container");
 const menuToggle = document.querySelector(".menu-toggle");

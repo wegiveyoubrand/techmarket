@@ -1,19 +1,17 @@
 .container-search {
   background: #fff;
   border-radius: 25px;
+}
 
-  button {
-    display: grid;
-    place-items: center;
-    padding: 1rem;
-    grid-template-columns: auto 1fr;
-    outline: none;
-    border: none;
-    background: transparent;
-    gap: .5rem;
-    font-size: 1.2rem;
-    border-left: 2px solid #eee;
-  }
+button {
+  outline: none;
+  border: none;
+
+  padding: 10px 20px;
+
+  // background: transparent;
+
+  font-size: 1rem;
 }
 
 .close-modal {

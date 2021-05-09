@@ -3,19 +3,11 @@
   border-radius: 25px;
 }
 
-.container-search button {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  padding: 1rem;
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
+button {
   outline: none;
   border: none;
-  background: transparent;
-  gap: .5rem;
-  font-size: 1.2rem;
-  border-left: 2px solid #eee;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 
 .close-modal {
@@ -302,11 +294,9 @@ input {
 
 .product-card {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  height: auto;
   padding: 2rem;
+  width: 100%;
+  height: auto;
   background: #fff;
   border-radius: 25px;
   display: -webkit-box;
@@ -329,18 +319,24 @@ input {
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
   z-index: 1;
+  overflow: hidden;
 }
 
-.product-card:after {
-  content: "";
+.product-card .over-lay {
   position: absolute;
-  height: 0;
-  bottom: 0;
-  width: 100%;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  z-index: 2;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .product-card:hover {
@@ -348,8 +344,9 @@ input {
           box-shadow: 0 5px 5px #fff;
 }
 
-.product-card:hover::after {
-  height: 100%;
+.product-card:hover .over-lay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .product-card img {
