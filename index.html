@@ -26,7 +26,7 @@
 
         <nav class="top-nav">
 
-          <div class="search-bar">
+          <div class="search">
             <span class="material-icons">search</span>
           </div>
 
@@ -39,7 +39,7 @@
 
           <div class="dr-phone">
             <a href="" class="">
-              <i class="materials-icon"></i>
+              <i class="material-icons"></i>
              My Cart</span>
             </a>
           </div>
@@ -76,15 +76,24 @@
         </nav>
       </aside>
 
+      <div class="browse-setting">
+        <i class="material-icons">swap_vert</i>
+      </div>
+
+      <div class="scroll-to-top">
+        <i class="material-icons">top</i>
+      </div>
+
       <div class="modal-container">
+        <div class="closeModal">
+          <i class="material-icons">clear</i>
+        </div>
+
         <div class="modal">
-          <div class="close-mo">
-            <i class="material-icons">clear</i>
-          </div>
-          <div class="product-config"></div>
-          <div class="user-config">
-            <button href="" class="button">Order</button>
-          </div>
+          <form action="">
+            <label for=""></label>
+            <input type="text" placeholder="Enter Item you are looking for">
+          </form>
         </div>
       </div>
 
@@ -130,5 +139,6 @@
     </div>
 
     <script src="./src/js/main.js" type="module"></script>
+    <script src="./src/js/modules/close.js" type="module"></script>
   </body>
 </html>

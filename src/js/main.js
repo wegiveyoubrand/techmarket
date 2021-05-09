@@ -113,8 +113,20 @@ if (userSelection == "iphones") {
 </div>`;
 }
 
-const menu = document.querySelector(".menu-container");
-const menuToggle = document.querySelector(".menu-toggle");
-menuToggle.addEventListener("click", (e) => {
-  menu.classList.toggle("active");
+// const menu = document.querySelector(".menu-container");
+// const menuToggle = document.querySelector(".menu-toggle");
+// menuToggle.addEventListener("click", (e) => {
+//   menu.classList.toggle("active");
+// });
+
+const searchButton = document.querySelector(".search");
+const closeModal = document.querySelector(".closeModal");
+const modalContainer = document.querySelector(".modal-container");
+
+searchButton.addEventListener("click", () => {
+  modalContainer.classList.add("active");
+});
+closeModal.addEventListener("click", () => {
+ 
+  modalContainer.classList.remove("active");
 });
