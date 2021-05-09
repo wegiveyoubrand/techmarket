@@ -375,6 +375,21 @@ input {
   background: rgba(0, 0, 255, 0.7);
   color: #fff;
   z-index: 100;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+}
+
+.browse-setting i {
+  font-size: 2rem;
+}
+
+.browse-setting:hover {
+  background: blue;
+  color: #fff;
 }
 
 .scroll-to-top {
@@ -385,8 +400,23 @@ input {
   width: 3rem;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  color: #f3f3f3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   z-index: 100;
+  cursor: pointer;
+  -webkit-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+}
+
+.scroll-to-top i {
+  font-size: 1.85rem;
+}
+
+.scroll-to-top:hover {
+  background: black;
+  color: #fff;
 }
 
 *,
