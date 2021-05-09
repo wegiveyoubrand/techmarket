@@ -284,6 +284,7 @@ input {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  max-width: 100%;
 }
 
 @media (min-width: 620px) {
@@ -343,6 +344,13 @@ input {
 
 .product-card:hover::after {
   height: 100%;
+}
+
+.product-card img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 *,
