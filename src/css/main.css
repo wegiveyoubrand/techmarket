@@ -396,10 +396,10 @@ footer ul a {
 
 .categories .card:hover {
   cursor: pointer;
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  -webkit-box-shadow: 0 5px 10px 0 #eee;
-          box-shadow: 0 5px 10px 0 #eee;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(115, 13, 13, 0.494);
+          box-shadow: 0 5px 10px 0 rgba(115, 13, 13, 0.494);
 }
 
 .product-card {
