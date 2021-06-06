@@ -357,7 +357,6 @@ footer ul a {
   scroll-snap-align: x mandatory;
   overflow-x: auto;
   padding: 2rem 20px;
-  gap: 20px;
 }
 
 @media (min-width: 620px) {
@@ -377,6 +376,7 @@ footer ul a {
   height: 180px;
   width: 200px;
   border-radius: 25px;
+  margin-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
