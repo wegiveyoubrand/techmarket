@@ -318,7 +318,8 @@ footer ul a {
   font-weight: bold;
 }
 
-.products {
+.products,
+.categories {
   max-width: 100%;
   display: -ms-grid;
   display: grid;
@@ -328,11 +329,30 @@ footer ul a {
 }
 
 @media (min-width: 620px) {
-  .products {
+  .products,
+  .categories {
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
   }
+}
+
+.categories .card {
+  height: 180px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px #eee;
+          box-shadow: 0 5px 5px #eee;
 }
 
 .product-card {

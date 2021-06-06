@@ -2,6 +2,7 @@
 
 import {
   phones,
+  categories,
   iphones,
   samsungs,
   iphones_image_root,
@@ -16,6 +17,16 @@ import {
 
 const productsContainer = document.querySelectorAll(".products");
 const userSelection = "iphones" || selection.textContent;
+const categoriesContainer = document.querySelector(".categories");
+
+categoriesContainer.innerHTML = `${categories
+  .map((category) => {
+    return `
+    <div class ="card">
+      <h3>${category.name}</h3>
+    </div>`;
+  })
+  .join("")}`;
 
 const selection = document.querySelectorAll(".product-tab");
 
@@ -127,6 +138,5 @@ searchButton.addEventListener("click", () => {
   modalContainer.classList.add("active");
 });
 closeModal.addEventListener("click", () => {
- 
   modalContainer.classList.remove("active");
 });
