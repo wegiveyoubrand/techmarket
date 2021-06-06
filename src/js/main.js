@@ -23,7 +23,7 @@ categoriesContainer.innerHTML = `${categories
   .map((category) => {
     return `
     <div class ="card">
-      <h3>${category.name}</h3>
+      <p>${category.name}</p>
     </div>`;
   })
   .join("")}`;
