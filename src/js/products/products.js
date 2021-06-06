@@ -30,7 +30,7 @@ const categories = [
     name: "Freezers",
   },
   {
-    name: "Printers",
+    name: "Speakers",
   },
 ];
 
