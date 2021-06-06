@@ -333,8 +333,7 @@ footer ul a {
   font-weight: bold;
 }
 
-.products,
-.categories {
+.products {
   max-width: 100%;
   display: -ms-grid;
   display: grid;
@@ -344,8 +343,27 @@ footer ul a {
 }
 
 @media (min-width: 620px) {
-  .products,
+  .products {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: x mandatory;
+  overflow-x: auto;
+  padding: 2rem 20px;
+  gap: 20px;
+}
+
+@media (min-width: 620px) {
   .categories {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
@@ -353,7 +371,11 @@ footer ul a {
 }
 
 .categories .card {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   height: 180px;
+  width: 200px;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
